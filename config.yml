@@ -1,0 +1,26 @@
+title: "Leonard Mocanu - Software Craftsman"
+description: ""
+keywords:
+  - software developer
+  - oop
+  - clean code
+  - ddd
+  - domain-driven design
+  - php
+
+author:
+  name: "Leonard Mocanu"
+  headline: "Software Craftsman"
+  bio: |
+    Passionate software engineer.
+  interests:
+    - OOP
+    - Clean Code
+    - Domain-Driven Design
+    - PHP
+
+social_networks:
+  twitter: "leonardmocanu2"
+  github: "https://github.com/rattrap"
+  email: "leonard@mocanu.me"
+  url: ""
