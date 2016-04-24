@@ -1,8 +1,6 @@
 # mocanu.me
 
-Sources for [mocanu.me](http://mocanu.me).
-
-Powered by [Spress](http://spress.yosymfony.com/).
+Sources for [mocanu.me](http://mocanu.me) (powered by [Spress](http://spress.yosymfony.com/))
 
 ## Usage
 

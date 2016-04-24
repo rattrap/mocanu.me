@@ -1,69 +1,75 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>{{ page.title | default(site.title) }}</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="{{ page.description | default(site.description) }}" />
-		<meta name="keywords" content="{{ page.keywords | default(site.keywords) | join(',') }}" />
-		<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
-	</head>
-	<body>
+<head>
 
-		<div id="wrapper">
-			<div id="main">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-				<header id="header">
-					<h1>{{ site.author.name }}</h1>
-					<h2>{{ site.author.headline }}</h2>
-					<p>{{ site.author.bio }}</p>
-					<nav>
-						{% if site.author.interests %}
-						<ul class="interests">
-							{% for interest in site.author.interests %}
-								<li><i class="fa fa-circle-thin"></i> {{ interest }}</li>
-							{% endfor %}
-						</ul>
-						{% endif %}
-						<ul>
-							{% if site.social_networks.twitter %}
-							<li>
-								<a href="https://twitter.com/{{ site.social_networks.twitter }}" class="icon fa-twitter">
-									<span class="label">Twitter</span>
-								</a>
-							</li>
-							{% endif %}
-							{% if site.social_networks.github %}
-							<li>
-								<a href="{{ site.social_networks.github }}" class="icon fa-github">
-									<span class="label">Github</span>
-								</a>
-							</li>
-							{% endif %}
-							{% if site.social_networks.email %}
-								<li>
-									<a href="mailto:{{ site.social_networks.email }}" class="icon fa-envelope-o">
-										<span class="label">Email</span>
-									</a>
-								</li>
-							{% endif %}
-							{% if site.social_networks.url %}
-								<li>
-									<a href="{{ site.social_networks.url }}" class="icon fa-link">
-										<span class="label">URL</span>
-									</a>
-								</li>
-							{% endif %}
-						</ul>
-					</nav>
-				</header>
+	<title>{{ page.title | default(site.title) }}</title>
 
-				<footer id="footer">
-					<span class="copyright">
-						&copy; {{ 'now' | date('Y') }} {{ site.author.name }}.
-					</span>
-				</footer>
-				
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta name="description" content="{{ page.description | default(site.description) }}" />
+	<meta name="keywords" content="{{ page.keywords | default(site.keywords) | join(',') }}" />
+
+	<link rel="stylesheet" media="all" href="{{ site.url }}/css/main.css">
+	<link rel="icon" type="image/x-icon" href="{{ site.url }}/favicon.ico">
+
+</head>
+<body>
+	<header id="home">
+		<div class="row banner">
+
+			<div class="banner-text">
+				<h1 class="responsive-headline">I'm {{ site.author.name }}</h1>
+				<h3>{{ site.author.headline }}</h3>
+				<p class="lead">{{ site.author.bio }}</p>
+				<hr/>
 			</div>
+
+			{% if site.author.interests %}
+				<ul class="stats-tabs">
+					{% for interest in site.author.interests %}
+						<li><i class="fa fa-circle-thin"></i> {{ interest }}</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+
+			<ul class="social">
+				{% if site.social_networks.twitter %}
+				<li>
+					<a href="https://twitter.com/{{ site.social_networks.twitter }}">
+						<i class="icon-twitter"></i>
+					</a>
+				</li>
+				{% endif %}
+				{% if site.social_networks.github %}
+				<li>
+					<a href="{{ site.social_networks.github }}">
+						<i class="icon-github"></i>
+					</a>
+				</li>
+				{% endif %}
+				{% if site.social_networks.email %}
+				<li>
+					<a href="mailto:{{ site.social_networks.email }}">
+						<i class="icon-envelope"></i>
+					</a>
+				</li>
+				{% endif %}
+				{% if site.social_networks.url %}
+				<li>
+					<a href="{{ site.social_networks.url }}">
+						<i class="icon-link"></i>
+					</a>
+				</li>
+				{% endif %}
+			</ul>
 		</div>
-	</body>
+	</header>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/jquery.fittext.js"></script>
+	<script src="/js/init.js"></script>
+</body>
 </html>

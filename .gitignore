@@ -1,4 +1,9 @@
 build/
+src/content/css/
+src/plugins/
+vendor/
+node_modules/
+npm-debug.log
 .idea/
 .DS_Store
 *.swp

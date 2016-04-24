@@ -1,0 +1,10 @@
+{
+	"name": "rattrap/mocanu.me",
+	"description": "mocanu.me theme source files.",
+	"license": "MIT",
+	"type": "spress-theme",
+	"require": {
+		"spress/spress-installer": "2.0.*",
+		"rattrap/spress-html-beautifier": "1.0.*"
+	}
+}

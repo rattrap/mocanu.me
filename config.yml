@@ -10,13 +10,14 @@ keywords:
 
 author:
   name: "Leonard Mocanu"
-  headline: "Software Craftsman"
+  headline: "Software Craftsman (self-proclaimed)"
   bio: |
-    Passionate software engineer.
+    Bucharest based <span>software developer</span>. Constantly experimenting with new technologies and techniques.
+    I am very passionate about <span>Domain-Driven Design</span>, <span>Object-oriented analysis and design</span> and <span>Clean Code</span>.
   interests:
+    - Domain-Driven Design
     - OOP
     - Clean Code
-    - Domain-Driven Design
     - PHP
 
 social_networks:
