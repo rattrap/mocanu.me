@@ -4,9 +4,59 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7c2a58f6377642c6df5fbfae867fd4ef",
-    "content-hash": "a465ddb5eb0a8950ddbd1894278b090b",
+    "hash": "688fafb51f314e897a58b1c94c947d98",
+    "content-hash": "048586c6b0102c4948465496931a5880",
     "packages": [
+        {
+            "name": "enzolutions/spress-plugin-google-analytics",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/enzolutions/Spress-plugin-google-analytics.git",
+                "reference": "3c0900ece4f23143d90ac0c67ce82f8c8a713f96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/enzolutions/Spress-plugin-google-analytics/zipball/3c0900ece4f23143d90ac0c67ce82f8c8a713f96",
+                "reference": "3c0900ece4f23143d90ac0c67ce82f8c8a713f96",
+                "shasum": ""
+            },
+            "require": {
+                "yosymfony/spress-installer": "~2.0"
+            },
+            "type": "spress-plugin",
+            "extra": {
+                "spress_name": "Spress-plugin-google-analytics",
+                "spress_class": "SpressPlugins\\SpressGoogleAnalytics\\SpressGoogleAnalytics",
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SpressPlugins\\SpressGoogleAnalytics\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "enzo - Eduardo Garcia",
+                    "email": "enzo@enzolutions.com",
+                    "homepage": "http://enzolutions.com"
+                }
+            ],
+            "description": "Enable add Google Analytics Tracker in your Spress site",
+            "keywords": [
+                "analytics",
+                "plugin",
+                "seo",
+                "spress"
+            ],
+            "time": "2016-01-17 19:28:12"
+        },
         {
             "name": "mihaeu/html-formatter",
             "version": "1.0.0",
@@ -143,7 +193,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "enzolutions/spress-plugin-google-analytics": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

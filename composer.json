@@ -5,6 +5,7 @@
 	"type": "spress-theme",
 	"require": {
 		"spress/spress-installer": "2.0.*",
-		"rattrap/spress-html-beautifier": "1.0.*"
+		"rattrap/spress-html-beautifier": "1.0.*",
+		"enzolutions/spress-plugin-google-analytics": "2.0.*@dev"
 	}
 }

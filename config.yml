@@ -25,3 +25,6 @@ social_networks:
   github: "https://github.com/rattrap"
   email: "leonard@mocanu.me"
   url: ""
+google_analytics:
+  id: UA-76840865-1
+  site: mocanu.me
